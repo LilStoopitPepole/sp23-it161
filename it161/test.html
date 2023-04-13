@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <title>IT161 Test Web Page by Merce Lutzker</title>
+        <!--START Style here-->
+        <style>
+            img {
+                float:left;
+                margin:1em;
+            }
+            a {
+                color:black;
+            }
+            a:hover {
+                color:magenta;
+                background-color:lime;
+                text-decoration: line-through;
+            }
+            footer {
+                clear:both;
+            }
+        </style>
+        <!--END Style here-->
+    </head>
+    <body>
+        <header>
+            <h1>Here's Merce Lutzker's IT 161 Test page!</h1>
+            <nav>
+                <a href="https://www.w3.org/" target="_blank">Wanna check out the World Wide Web Consotrium?</a> | 
+                <a href="https://whatwg.org/" target="_blank">What about the WHATWG community?</a> | 
+                <a href="https://www.w3schools.com/" target="_blank">Big fan of W3Schools.</a> | 
+                <a href="https://linkedin.com/learning/login" target="_blank">Linkedin Learning ain't bad either.</a>
+            </nav>
+        </header>
+            <img src="images/me.png" alt="Picture of Merce">
+            <p>Here's that first test web page we're all focusing on, for IT 161. I'm gonna test it in a live browser, just you wait! Of course, I'll click the two validator links in the footer to do that.</p>
+        <footer>
+            <p><small>&copy; 2022 by 
+                Merce Lutzker, All Rights Reserved ~ 
+                <a id="html-checker" href="#">Check HTML</a> ~ 
+                <a id="css-checker" href="#">Check CSS</a></small>
+           </p>
+        </footer>
+        <script>
+            //https://tinyurl.com/dynamic-html-checker
+            document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+              
+            document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+         </script>
+    </body>
+</html>
